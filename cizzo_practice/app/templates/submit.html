@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1><div style='align-center'>Event Submission Form</div></h1>
+	<form action="" method="post" name="event">
+		{{ form.hidden_tag() }}
+		<table>
+			<tr>
+				<td>Date and Time:</td>
+				<td>{{form.datetime}}</td>
+			</tr>
+		</table>
+	</form>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<style>
+		.boxed {
+			border: 1px solid maroon;
+			padding: 10px;
+		}
+		</style>
+
+		{% if title %}
+		<title>CSO Blotter: {{ title }}</title>
+		{% else %}
+		<title>CSO Blotter</title>
+		{% endif%}
+	</head>
+	<body>
+		<div><a href="/index/blotter">Blotter</a></div>
+		<hr>
+		{% block content %}{% endblock %}
+	</body>
+</html>
